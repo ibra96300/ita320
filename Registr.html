@@ -1,0 +1,373 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Home</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
+
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/Custom-Cs.css" rel="stylesheet" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <form id="form1">
+        <div>
+            <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="Home.aspx">
+                            <span>
+                            </span>Hotels
+                        </a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="Home.html">Home</a></li>
+                            <li class="active"><a href="ChooseRoom.html">Choose Room</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <br />
+
+            <br />
+            <br />
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-md-3">
+
+                        </div>
+                        <div class="col-md-6">
+                            <p style="font-size: 20px;color: #337ab7;">Registration Form:</p>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label>first name:</label>
+                                </div>
+                                <div class="col-md-10">
+                                    <input id="Text1" type="text" class="form-control"/>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label>middle initial:</label>
+                                </div>
+                                <div class="col-md-10">
+                                    <input id="Text2" type="text" class="form-control" />
+                                </div>
+                            </div>
+
+                            
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label>last name:</label>
+                                </div>
+                                <div class="col-md-10">
+                                    <input id="Text3" type="text" class="form-control" />
+                                </div>
+                            </div>
+
+
+                            
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label>city:</label>
+                                </div>
+                                <div class="col-md-10">
+                                    <input id="Text4" type="text" class="form-control" />
+                                </div>
+                            </div>
+
+                           
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label>country:</label>
+                                </div>
+                                <div class="col-md-10">
+                                  
+                                        <select id="s1" class="form-control">
+                                            <option value="France">France</option>
+                                            <option value="Germany">Germany</option>
+                                            <option value="Italy">Italy</option>
+                                            <option value="America">America</option>
+                                        </select>
+                                    </div>
+                                
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label>zip:</label>
+                                </div>
+                                
+                                    <div class="col-md-10">
+                                        <input id="Text5" type="text" class="form-control" />
+                                    
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label>Email:</label>
+                                </div>
+                              
+                                    <div class="col-md-10">
+                                        <input id="Text6" type="text" class="form-control" onchange="script3();" />
+                                    </div>
+                                </div>
+                           
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label>user name:</label>
+                                </div>
+                                <div class="col-md-10">
+                                        <input id="Text7" type="text" class="form-control" />
+                                    </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label>password:</label>
+                                </div>
+                               
+                                    <div class="col-md-10">
+                                        <input id="Text8" type="text" class="form-control" />
+                                    </div>
+                                </div>
+                            
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label>Repeat Password:</label>
+                                </div>
+                               
+                                    <div class="col-md-10">
+                                        <input id="Text9" type="text" class="form-control" onchange="script4();" />
+                                    </div>
+                               
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label>comments:</label>
+                                </div>
+                                
+                                    <div class="col-md-10">
+                                        <textarea id="Text10" type="text" class="form-control" onchange="script4();"></textarea>
+                                    </div>
+                                </div>
+                           
+
+                            <div class="row">
+                                <div class="col-md-10">
+                                    <input id="ch1" type="checkbox" />    <label>i agree to the site teams</label>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="col-md-3">
+                                        <button id="b1" type="button" class="btn btn-primary" onclick="myFunction();">submit</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <button id="b2" type="button" class="btn btn-danger" onclick="reset();">Reset Form</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                            <br />
+                            <br />
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <script>
+                function  myFunction()
+                {
+                    var result = 9;
+                    //شرط للتحقق من وجود قيمة ضمن مربعات الادخال
+                    if (document.getElementById("Text1").value == "")
+                    {
+                        alert("first name is null");
+                        result = result - 1;
+
+                    }
+
+                    if (document.getElementById("Text2").value == "") {
+                        alert("middle initial is null");
+                        result = result - 1;
+                    }
+
+                    if (document.getElementById("Text3").value == "") {
+                        alert("last name is null");
+                        result = result - 1;
+
+                    }
+                    if (document.getElementById("Text4").value == "") {
+                        alert("city is null");
+                        result = result - 1;
+
+                    }
+                    if (document.getElementById("Text7").value == "") {
+                        alert("user name is null");
+                        result = result - 1;
+
+                    }
+                    if (document.getElementById("Text8").value == "") {
+                        alert("password is null");
+                        result = result - 1;
+
+                    }
+
+                    //طول الرمز البريدي بين 5 و10 محارف
+                    var zip = document.getElementById("Text5").value;
+                    if (zip.length < 5 || zip.length > 10) {
+                        result = result - 1;
+                        alert(" please enter zip number  between 5 and 10 char");
+
+                    }
+
+                    //الحرف البادئ حرف واحد فقط
+                    var midle = document.getElementById("Text2").value;
+                    if (midle.length > 1)
+                    {
+                        alert("please enter one char for middle initial ");
+                        result = result - 1;
+
+                    }
+
+                    //التحقق من تحديد صندوق i agree
+                    if (!(document.getElementById("ch1").checked))
+                    {
+                        alert("please check to the site teams");
+                        result = result - 1;
+
+                    }
+
+                    if (result == 9) {
+                        
+                        var first = document.getElementById("Text1").value;
+                      var mid=  document.getElementById("Text2").value;
+                      var last=  document.getElementById("Text3").value;
+                      var city=  document.getElementById("Text4").value;
+                      var country=document.getElementById("s1").value;
+                      var zip= document.getElementById("Text5").value;
+                      var email=  document.getElementById("Text6").value;
+                      var  user=document.getElementById("Text7").value;
+                      var pass= document.getElementById("Text8").value;
+                     var comm=  document.getElementById("Text10").value;
+
+                     window.location.href = 'result.html?first=' + first + '&mid=' + mid + '&last=' + last + '&city=' + city + '&country=' + country + '&zip=' + zip + '&email=' + email + '&user='+user+'&pass='+pass+'&comm='+comm+'';
+                    }
+
+                }
+
+            </script>
+
+            <script>
+        //تابع التحقق من البريد الالكتروني
+        function script3()
+        {
+            var email = document.getElementById("Text6").value;
+            if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)))
+            {
+                alert("email incorrect format")
+            }
+        }
+            </script>
+
+
+
+            <script>
+        //تابع التحقق من تطابق كلمة المرور
+        function script4()
+        {
+            var password = document.getElementById("Text8").value;
+            var repassword = document.getElementById("Text9").value;
+            if (password != repassword)
+            {
+                alert("password is not matched")
+            }
+        }
+            </script>
+
+            <script>
+       //تابع التحقق من الملاحظات واخذ اول 30 حرف
+        function script4()
+        {
+            var string1 = document.getElementById("Text10").value;
+            if (string1.length > 100)
+            {
+                var String2 = string1.slice(0, 30)
+                alert("we will save this string: " + String2);
+                document.getElementById("Text10").value = String2;
+            }
+        }
+            </script>
+
+            
+            <script>
+                //مسح محتوى الواجهة
+                function reset()
+                {
+                    document.getElementById("Text1").value = "";
+                    document.getElementById("Text2").value = "";
+                    document.getElementById("Text3").value = "";
+                    document.getElementById("Text4").value = "";
+                    document.getElementById("Text5").value = "";
+                    document.getElementById("Text6").value = "";
+                    document.getElementById("Text7").value = "";
+                    document.getElementById("Text8").value = "";
+                    document.getElementById("Text9").value = "";
+                    document.getElementById("Text10").value = "";
+                    document.getElementById("Checkbox1").checked = false;
+                }
+
+            </script>
+
+        </div>
+
+
+        <footer>
+            <div class="container">
+            </div>
+        </footer>
+
+        <!--- Footer -->
+
+    </form>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
